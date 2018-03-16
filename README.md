@@ -8,3 +8,5 @@ La aplicacion muestra una lista de personajes ordenadas por su ranking.
 Tiene un campo de busqueda en el cual puedes introducir la posicion que buscara.
 Si pulsas sobre un personaje te muestra una vista con toda su informacion y para volver a la lista
 basta con deslizar el dedo de izquierda a derecha,
+
+Para volver con el gesto swipe he utilizado esta libreria: https://github.com/bluzwong/swipeback
