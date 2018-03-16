@@ -4,19 +4,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
+
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.github.bluzwong.swipeback.SwipeBackActivityHelper;
 
 /**
  * Created by Vikin on 15/03/2018.
  */
 
-public class ViewChampionDetailsActivity extends BaseActivity {
+public class ViewChampionDetailsActivity extends BaseActivity{
+
+    SwipeBackActivityHelper helper = new SwipeBackActivityHelper();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.champion_details);
+
+        helper.setEdgeMode(true)
+                .setNeedBackgroundShadow(true)
+                .init(this);
 
         activateToolbarWithBackEnabled();
 
@@ -57,6 +66,11 @@ public class ViewChampionDetailsActivity extends BaseActivity {
         getMenuInflater().inflate(R.menu.menu_champion_details, menu);
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        helper.finish();
     }
 
     protected int getChampionClassImage(String clase) {

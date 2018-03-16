@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.github.bluzwong.swipeback.SwipeBackActivityHelper;
+
 import java.util.ArrayList;
 
 import static org.molina.poebrowser.SearchActivity.POE_QUERY;
@@ -57,7 +59,8 @@ public class MainActivity extends BaseActivity {
                                 CHAMPION_TRANSFER,
                                 mPoeRecyclerViewAdapter.getChampion(position)
                         );
-                        startActivity( intent );
+                        SwipeBackActivityHelper.startSwipeActivity(MainActivity.this, intent);
+//                        startActivity( intent );
                     }
 
                     @Override
