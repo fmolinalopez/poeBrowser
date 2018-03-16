@@ -50,8 +50,8 @@ public class SearchActivity extends BaseActivity {
                                 getApplicationContext()
                         );
                 String regex = "\\d+";
-                // Si la cadena que recibe no consta solo de numeros entonces pasa el valor 1
-                sharedPreferences.edit().putString(POE_QUERY, query.matches(regex) ? query : "1").commit();
+                // Si la cadena que recibe no consta solo de numeros o el numero es menor que 1 entonces pasa el valor 1
+                sharedPreferences.edit().putString(POE_QUERY, query.matches(regex) && (Integer.parseInt(query) > 0) ? query : "1").commit();
                 mSearchView.clearFocus();
 
                 finish();
