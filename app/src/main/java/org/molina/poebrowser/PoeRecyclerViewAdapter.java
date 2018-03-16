@@ -2,7 +2,6 @@ package org.molina.poebrowser;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +48,7 @@ public class PoeRecyclerViewAdapter extends RecyclerView.Adapter<PoeRecyclerView
     public void onBindViewHolder(PoeRecyclerViewHolder holder, int position) {
         Champion championItem = mChampionList.get(position);
 
-        holder.mCharacterPic.setImageResource(getChampionClass(championItem.getClase()));
+        holder.mCharacterPic.setImageResource(getChampionClassForThumbnail(championItem.getClase()));
 
         holder.mTitle.setText(championItem.getName());
     }
@@ -64,7 +63,7 @@ public class PoeRecyclerViewAdapter extends RecyclerView.Adapter<PoeRecyclerView
         return (mChampionList != null ? mChampionList.get(position) : null);
     }
 
-    protected int getChampionClass(String clase) {
+    protected int getChampionClassForThumbnail(String clase) {
         switch (clase.toLowerCase()) {
             case "ranger":
             case "deadeye":

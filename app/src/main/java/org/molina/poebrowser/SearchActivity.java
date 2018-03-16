@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.SearchView;
@@ -14,6 +15,8 @@ import android.support.v7.widget.SearchView;
  */
 
 public class SearchActivity extends BaseActivity {
+
+    public static final String LOG_TAG = SearchActivity.class.getSimpleName();
 
     public static final String POE_QUERY = "POE_QUERY";
 
@@ -46,7 +49,9 @@ public class SearchActivity extends BaseActivity {
                         PreferenceManager.getDefaultSharedPreferences(
                                 getApplicationContext()
                         );
-                sharedPreferences.edit().putString(POE_QUERY, query).commit();
+                String regex = "\\d+";
+                // Si la cadena que recibe no consta solo de numeros entonces pasa el valor 1
+                sharedPreferences.edit().putString(POE_QUERY, query.matches(regex) ? query : "1").commit();
                 mSearchView.clearFocus();
 
                 finish();

@@ -26,25 +26,25 @@ public class ViewChampionDetailsActivity extends BaseActivity {
         champName.setText("Nombre: " + champion.getName());
 
         TextView rank = findViewById(R.id.rank);
-        rank.setText("Nombre: " + champion.getRank());
+        rank.setText("Rango: " + champion.getRank());
 
         TextView dead = findViewById(R.id.dead);
-        dead.setText("Nombre: " + champion.getDead());
+        dead.setText("Muerto: " + champion.getDead());
 
         TextView online = findViewById(R.id.online);
-        online.setText("Nombre: " + champion.getOnline());
+        online.setText("Online: " + champion.getOnline());
 
         TextView level = findViewById(R.id.level);
-        level.setText("Nombre: " + champion.getLevel());
+        level.setText("Nivel: " + champion.getLevel());
 
         TextView clase = findViewById(R.id.clase);
-        clase.setText("Nombre: " + champion.getClase());
+        clase.setText("Clase: " + champion.getClase());
 
         TextView experience = findViewById(R.id.experience);
-        experience.setText("Nombre: " + champion.getExperience());
+        experience.setText("Experiencia: " + champion.getExperience());
 
         TextView challenges = findViewById(R.id.challenges);
-        challenges.setText("Nombre: " + champion.getChallenges());
+        challenges.setText("Desafios: " + champion.getChallenges());
     }
 
     @Override
