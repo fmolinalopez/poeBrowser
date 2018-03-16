@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintTop_toBottomOf="@+id/app_bar"
         app:layout_constraintVertical_bias="1.0"
-        flickr:cardBackgroundColor="?colorPrimary"
+        flickr:cardBackgroundColor="@color/poeBackgroundColor"
         flickr:cardCornerRadius="0dp"
         flickr:cardPreventCornerOverlap="false"
         flickr:contentPaddingTop="16dp"
@@ -34,8 +34,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:backgroundTint="@color/poeBackgroundColor">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/name"

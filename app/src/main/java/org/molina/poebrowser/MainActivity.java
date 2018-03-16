@@ -24,8 +24,10 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_Poe);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         activateToolbar();
 
@@ -64,7 +66,6 @@ public class MainActivity extends BaseActivity {
                     }
                 }
         ));
-
     }
 
     @Override
