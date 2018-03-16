@@ -5,7 +5,9 @@ La API que utiliza es http://api.pathofexile.com/ladders/Standard?offset=x&limit
 del que buscar y limit la cantidad de resultados que recibes.
 # Aplicacion
 La aplicacion muestra una lista de personajes ordenadas por su ranking.
-Tiene un campo de busqueda en el cual puedes introducir la posicion que buscara.
+
+Tiene un campo de busqueda en el cual puedes introducir la posicion que buscara, si introduces algo que no sea un numero o un numero menor que 1, buscara a partir de la posicion 1.
+
 Si pulsas sobre un personaje te muestra una vista con toda su informacion y para volver a la lista
 basta con deslizar el dedo de izquierda a derecha,
 
