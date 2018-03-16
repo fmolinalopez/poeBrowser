@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="Theme.Base" parent="AppTheme">
+        <item name="colorPrimary">@color/poePrimaryBackground</item>
+        <item name="colorPrimaryDark">@color/poeSecondaryBackground</item>
+        <item name="colorAccent">@color/poeColorBackgroundAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/poeBackgroundColor</item>
+    </style>
+
+    <style name="Theme.Poe" parent="Theme.Base" />
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">@color/poePrimaryTextColor</item>
+        <item name="colorControlHighlight">@color/poeBackgroundColor</item>
+        <item name="android:actionMenuTextColor">@color/poePrimaryTextColor</item>
+        <item name="android:textColorSecondary">@color/poeSecondaryTextColor</item>
+        <item name="android:background">@color/poePrimaryBackground</item>
+    </style>
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/poePrimaryTextColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

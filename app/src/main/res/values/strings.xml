@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PoeBrowser</string>
+    <string name="settings">Settings</string>
+    <string name="searchable_item">searchable item</string>
+    <string name="search_label">Search Label</string>
+    <string name="serach_view_label">Search view label</string>
+    <string name="champion_details">Champion Details</string>
+    <string name="photo_Description">Photo description</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:poe="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        poe:showAsAction="never"
+        android:title="@string/searchable_item" />
+
+    <item
+        android:id="@+id/search_view"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/searchable_item"
+        android:orderInCategory="50"
+        poe:showAsAction="always"
+        poe:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>
