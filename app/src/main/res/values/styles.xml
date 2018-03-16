@@ -20,7 +20,7 @@
         <item name="colorControlHighlight">@color/poeBackgroundColor</item>
         <item name="android:actionMenuTextColor">@color/poePrimaryTextColor</item>
         <item name="android:textColorSecondary">@color/poeSecondaryTextColor</item>
-        <item name="android:background">@color/poePrimaryBackground</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">

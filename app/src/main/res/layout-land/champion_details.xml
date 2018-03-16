@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flickr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.molina.poebrowser.ViewChampionDetailsActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        flickr:layout_constraintEnd_toEndOf="parent"
+        flickr:layout_constraintStart_toStartOf="parent"
+        flickr:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar"
+        app:layout_constraintVertical_bias="0.0"
+        flickr:cardBackgroundColor="@color/poeBackgroundColor"
+        flickr:cardCornerRadius="0dp"
+        flickr:cardPreventCornerOverlap="false"
+        flickr:contentPaddingTop="16dp"
+        flickr:layout_constraintLeft_toLeftOf="parent"
+        flickr:layout_constraintRight_toRightOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="4"
+                android:scrollbars="vertical"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/champ_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="150dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/champ_image"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/dead"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top|center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/online"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rank"
+                app:layout_constraintTop_toBottomOf="@+id/dead" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/champ_image"
+                app:layout_constraintTop_toBottomOf="@+id/clase" />
+
+            <TextView
+                android:id="@+id/clase"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/champ_image"
+                app:layout_constraintTop_toBottomOf="@+id/rank" />
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/clase"
+                app:layout_constraintTop_toBottomOf="@+id/online" />
+
+            <TextView
+                android:id="@+id/challenges"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/poePrimaryTextColor"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/level"
+                app:layout_constraintTop_toBottomOf="@+id/experience" />
+
+            <ImageView
+                android:id="@+id/champ_image"
+                android:layout_width="262dp"
+                android:layout_height="218dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/photo_Description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="270dp" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

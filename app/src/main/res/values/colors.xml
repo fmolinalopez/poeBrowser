@@ -4,10 +4,10 @@
     <color name="poeSecondaryBackground">@color/md_blue_700</color>
     <color name="poeColorBackgroundAccent">@color/md_pink_500</color>
     <color name="poeBackgroundColor">@color/md_grey_600</color>
-    <color name="poePrimaryTextColor">@color/md_white_1000</color>
+    <color name="poePrimaryTextColor">@color/md_black_1000</color>
     <color name="poeSecondaryTextColor">@color/md_yellow_500</color>
 
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">@color/md_orange_900</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 </resources>
